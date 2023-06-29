@@ -21,7 +21,7 @@ Steps:
 2. Click ```Save``` and then ```Eval``` and ```Run```.
 3. Type in any query terms in the search bar and retrieve the results pertaining to the search (the search is case sensitive for now).
 
-### 2. Advanced Cosine Similar Searchity
+### 2. Advanced Cosine Similarity Search
 1. Install the required libraries :
 ```
 pip3 install requirements.txt
