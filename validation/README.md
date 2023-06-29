@@ -38,3 +38,12 @@ before the root element.
 ```
 This line specifies the XML version (1.0) and the character encoding (UTF-8) used in the
 document.
+
+```<!DOCTYPE data [...]>```
+This line declares the Document Type
+Definition (DTD) for the XML document. It defines the structure and
+rules for the elements in the document.
+
+The rest of the structure and rules adhere to the external DTD.
+Validation command for internal dtd: 
+```xmllint --valid int_islamqa_10thousand_500.xml```
