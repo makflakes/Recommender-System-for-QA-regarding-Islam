@@ -22,7 +22,7 @@ Murshed Alam Nahid
       
 - [x] Use GET Requests to gather XML data in python and compute cosine similarity.
       
-- [ ] Implement website for Statistics, Booleand and Cosine Similarity.
+- [ ] Implement website for Statistics, Boolean and Cosine Similarity.
       
 - [ ] OpenAI embeddings for semantic search.
       
