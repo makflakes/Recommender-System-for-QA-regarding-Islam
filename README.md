@@ -9,7 +9,7 @@ Ufkun-Bayram Menderes
 Murshed Alam Nahid
 
 ## **Motivation**:
-the project aims to develop an advanced search engine in the field of religion that utilizes personal experiences, seeking to provide more personalized, relevant, and intuitive search results, thereby enhancing user interaction and personalization of digital information.
+The project aims to develop an advanced search engine in the field of religion that utilizes personal experiences, seeking to provide more personalized, relevant, and intuitive search results, thereby enhancing user interaction and personalization of digital information.
 ## Setup the database
 
 
