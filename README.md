@@ -39,6 +39,7 @@ The project aims to develop an advanced search engine in the field of religion t
 ### 1. eXist-DB database setup
 
 Steps:
+
 1. Download eXist-db by following the instructions at <a href='https://exist-db.org/exist/apps/doc/basic-installation'>eXist-db Installation Guide</a>
 
 2. Start the eXist-db server and 'Open Dashboard'. Select ```eXide - XQuery IDE```.
@@ -52,7 +53,7 @@ Make sure the eXist-db server is still running for both these cases.
 
 ### 1. Basic Boolean Search
 Steps:
-1. Inside the ```eXide - XQuery IDE``` open the ```html_query_simple.xq``` file and change the line 9 ```$doc``` variable to pint to the location of the dataset within eXist-db.
+1. Inside the ```eXide - XQuery IDE``` open the ```html_query_simple.xq``` file and change the line 9 ```$doc``` variable to point to the location of the dataset within eXist-db.
 
 2. Click ```Save``` and then ```Eval``` and ```Run```.
 
