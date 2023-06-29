@@ -9,6 +9,7 @@ Ufkun-Bayram Menderes
 Murshed Alam Nahid
 
 ## Status of Project
+
 - [x] Collect data from website.
    
 - [x] Parse data into XML Format.
