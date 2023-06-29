@@ -1,4 +1,4 @@
-# **IslamQA : Driecting you to the correct Answer**
+# **IslamQA : Directing you to the correct Answer**
 The aim of this project is to collect expert answers for various queries regarding Islam from islamqa.info and to create easier and more accurate methods for users to search through these answers easily.
 
 ## Setup the database
