@@ -4,9 +4,9 @@ declare option output:method "html5";
 declare option output:media-type "text/html";
 import module namespace request = "http://exist-db.org/xquery/request";
 
-let $addressee := request:get-parameter("addressee", " ")
-let $queryWords := tokenize(lower-case($addressee), '\W+')
-let $doc := doc('/db/Islamqa10/islamqa_10thousand_500.xml')/data
+let $addressee := request:get-parameter("addressee", " ") (: reveives the input query from the URL or input field :)
+let $queryWords := tokenize(lower-case($addressee), '\W+')  (: tokenizes the input query  :)
+let $doc := doc('/db/Islamqa10/islamqa_10thousand_500.xml')/data  (: Enter your dataset path here :)
 
 return
 (: https://getbootstrap.com/docs/3.3/getting-started/ :)
@@ -28,10 +28,9 @@ return
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
-            
-            
         
         {
+            (: Loops over the entire dataset matching every word in $queryWords with the <question> as well as the <answer> fields of XML Database :)
             for $entry in $doc/entry
             where every $word in $queryWords satisfies contains(lower-case($entry/question), $word) or contains(lower-case($entry/answer), $word)
             return
