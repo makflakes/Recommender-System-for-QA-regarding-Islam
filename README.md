@@ -10,13 +10,21 @@ Murshed Alam Nahid
 
 ## Status of Project
 - [x] Collect data from website.
+   
 - [x] Parse data into XML Format.
+      
 - [x] Upload data into eXist-db database.
+      
 - [x] Collect statistics using XPath.
+      
 - [x] Implement XQuery code for Boolean Union Retrieval.
+      
 - [x] Use GET Requests to gather XML data in python and compute cosine similarity.
+      
 - [ ] Implement website for Statistics, Booleand and Cosine Similarity.
+      
 - [ ] OpenAI embeddings for semantic search.
+      
 - [ ] Set of easy-hard questions to test search capability.
 
 ## **Motivation**:
