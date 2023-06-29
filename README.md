@@ -52,7 +52,9 @@ Steps:
 Make sure the eXist-db server is still running for both these cases.
 
 ### 1. Basic Boolean Search
+
 Steps:
+
 1. Inside the ```eXide - XQuery IDE``` open the ```html_query_simple.xq``` file and change the line 9 ```$doc``` variable to point to the location of the dataset within eXist-db.
 
 2. Click ```Save``` and then ```Eval``` and ```Run```.
@@ -60,6 +62,9 @@ Steps:
 3. Type in any query terms in the search bar and retrieve the results pertaining to the search (the search is case sensitive for now).
 
 ### 2. Advanced Cosine Similarity Search
+
+Steps:
+
 1. Install the required libraries :
 ```
 pip3 install requirements.txt
