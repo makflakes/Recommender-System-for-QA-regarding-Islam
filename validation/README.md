@@ -46,7 +46,7 @@ rules for the elements in the document.
 
 The rest of the structure and rules adhere to the external DTD.
 
-Validation command for internal dtd: 
+**Validation command for internal dtd**: 
 ```
 xmllint --valid int_islamqa_10thousand_500.xml
 ```
