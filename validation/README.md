@@ -85,7 +85,7 @@ document associates an XML Schema file ("schema.xsd") with the
 document and provides information for the XML parser to locate and
 validate the XML against the specified schema rules.
 
-**Validation command for XML Schema: xmllint --schema**
+**Validation command for XML Schema:
 ```
-islamqa_10thousand_500.xsd schema_islamqa_10thousand_500.xml
+xmllint --schema islamqa_10thousand_500.xsd schema_islamqa_10thousand_500.xml
 ```
