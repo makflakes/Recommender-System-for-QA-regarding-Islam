@@ -1,6 +1,6 @@
 # **IslamQA : Directing you to the correct Answer**
 
-### **Project Members** :
+## **Project Members** :
 
 Mohammed Abdul Khaliq
 
