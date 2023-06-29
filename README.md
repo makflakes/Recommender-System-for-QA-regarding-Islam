@@ -2,9 +2,9 @@
 
 ## Setup
 
-```
-eXist-DB database setup
-```
+
+### 1. eXist-DB database setup
+
 Steps:
 1. Download eXist-db by following the instructions at <a href='https://exist-db.org/exist/apps/doc/basic-installation'>eXist-db Installation Guide</a>
 2. Start the eXist-db server and 'Open Dashboard'. Select ```eXide - XQuery IDE```.
