@@ -26,7 +26,7 @@ Validation command for external dtd:
 ```
 xmllint --dtdvalid ext_islamqa_10thousand_500.dtd islamqa_10thousand_500.xml
 ```
-Internal DTD:
+### Internal DTD:
 Likewise, the XML document with an internal DTD provides a structure for
 representing data related to questions and answers. The DTD defines the
 elements and their ordering, ensuring the document adheres to a specific
