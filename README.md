@@ -1,6 +1,14 @@
 # **IslamQA : Directing you to the correct Answer**
-The aim of this project is to collect expert answers for various queries regarding Islam from islamqa.info and to create easier and more accurate methods for users to search through these answers easily.
 
+**Project Members** :
+Mohammed Abdul Khaliq
+
+Ufkun-Bayram Menderes
+
+Murshed Alam Nahid
+
+**Motivation**:
+the project aims to develop an advanced search engine in the field of religion that utilizes personal experiences, seeking to provide more personalized, relevant, and intuitive search results, thereby enhancing user interaction and personalization of digital information.
 ## Setup the database
 
 
