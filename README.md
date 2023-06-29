@@ -17,7 +17,7 @@ Make sure the eXist-db server is still running for both these cases.
 
 ### 1. Basic Boolean Search
 Steps:
-1. Inside the ```eXide - XQuery IDE``` open the ```html_query_simple.xq``` file and change the line 7 ```$doc``` variable to pint to the location of the dataset within eXist-db.
+1. Inside the ```eXide - XQuery IDE``` open the ```html_query_simple.xq``` file and change the line 9 ```$doc``` variable to pint to the location of the dataset within eXist-db.
 2. Click ```Save``` and then ```Eval``` and ```Run```.
 3. Type in any query terms in the search bar and retrieve the results pertaining to the search (the search is case sensitive for now).
 
