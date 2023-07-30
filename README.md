@@ -18,11 +18,9 @@ Mohammed Abdul Khaliq, Ufkun-Bayram Menderes, Murshed Alam Nahid
       
 - [x] Use GET Requests to gather XML data in python and compute cosine similarity.
       
-- [ ] Implement website for Statistics, Boolean and Cosine Similarity.
+- [x] OpenAI/GPT4All embeddings for semantic search.
       
-- [ ] OpenAI embeddings for semantic search.
-      
-- [ ] Set of easy-hard questions to test search capability.
+- [x] Set of easy-hard questions to test search capability (Report).
 
 ## **Motivation**:
 The project aims to develop an advanced search engine in the field of religion that utilizes personal experiences, seeking to provide more personalized, relevant, and intuitive search results, thereby enhancing user interaction and personalization of digital information.
