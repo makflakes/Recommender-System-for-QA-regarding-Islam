@@ -87,5 +87,5 @@ validate the XML against the specified schema rules.
 
 **Validation command for XML Schema:
 ```
-xmllint --schema islamqa_10thousand_500.xsd schema_islamqa_10thousand_500.xml
+xmllint --schema islamqa_final_1500.xsd schema_islamqa_final_1500.xml
 ```
