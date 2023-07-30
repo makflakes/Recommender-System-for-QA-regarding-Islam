@@ -108,6 +108,8 @@ This implementation makes use of GPT4All's semantic vector representations which
 
 2. OpenAI's semantic search using their 'Ada-02' model has been implemented and is present in the XML data. However, to query such embeddings would require making use of OpenAI API Keys which would require extra security measures to ensure that they dont get leaked when the website is hosted. Additionally, such an implementation on the hosted website would cost us money. Thus, we opt for a similarly sophisticated OpenSource Semantic Search using GPT4All.
 
+3. Hosting using eXist-db is complex since unlike other conventional Databases like MongoDB connecting and authorization is not directly implemented in eXist-db and needs a manual setup which can be a security risk.
+
 
 
 
