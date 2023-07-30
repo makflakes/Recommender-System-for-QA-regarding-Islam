@@ -55,7 +55,7 @@ Make sure the eXist-db server is still running for both these cases.
 
 Steps:
 
-1. Inside the ```eXide - XQuery IDE``` open the ```html_query_simple.xq``` file and change the line 9 ```$doc``` variable to point to the location of the dataset within eXist-db.
+1. Inside the ```eXide - XQuery IDE``` open the ```onlyquery.xq``` file and change the line 11 ```$doc``` variable to point to the location of the dataset within eXist-db.
 
 2. Click ```Save``` and then ```Eval``` and ```Run```.
 
