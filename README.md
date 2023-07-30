@@ -71,7 +71,7 @@ pip3 install requirements.txt
 python3 app.py
 ```
 
-### Types of Searches :
+## Types of Searches :
 
 #### 1. Token matching / Boolean Union Search :
 
