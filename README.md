@@ -87,7 +87,7 @@ The results displayed will contain the exact words you searched for. If all the 
 
 #### 2. Sklearn Search :
 
-This implementation makes use of sklearn's TFIDFVectorizer to create vector embeddings for the Title+Question+Answer elements of the XML data. The User query is similarly vectorized and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
+This implementation makes use of sklearn's ```TFIDFVectorizer``` to create vector embeddings for the Title+Question+Answer elements of the XML data. The User query is similarly vectorized and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
 
 #### 3. GPT4All Search :
 
