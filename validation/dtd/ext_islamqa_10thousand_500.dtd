@@ -1,6 +1,0 @@
-<!ELEMENT data (entry*)>
-<!ELEMENT entry (url, title, question, answer)>
-<!ELEMENT url (#PCDATA)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT question (#PCDATA)>
-<!ELEMENT answer (#PCDATA)>
