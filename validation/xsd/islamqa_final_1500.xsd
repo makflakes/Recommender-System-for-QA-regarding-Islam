@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define complex types for entry, ada_embedding, and gpt4all_embeddings -->
+  <xs:complexType name="EntryType">
+    <xs:sequence>
+      <xs:element name="url" type="xs:anyURI"/>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="question" type="xs:string"/>
+      <xs:element name="answer" type="xs:string"/>
+      <xs:element name="ada_embedding" type="EmbeddingType"/>
+      <xs:element name="gpt4all_embeddings" type="EmbeddingType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EmbeddingType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- Define the root element "data" -->
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="entry" type="EntryType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
