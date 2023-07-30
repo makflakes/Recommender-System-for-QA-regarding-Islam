@@ -27,6 +27,11 @@
 
 .
 
+.
+
+.
+
+.
 
 
 ## Status of Project
@@ -74,7 +79,7 @@ Steps:
 
 2. Start the eXist-db server and 'Open Dashboard'. Select ```eXide - XQuery IDE```.
    
-3. Create a "New" file of type XML and upload the dataset present at ```/dataset/islamqa_10thousand_500.xml``` and store it at an appropriate eXist-db path.
+3. Create a "New" file of type XML and upload the dataset present at the Google Drive link named ```islamqa_final_1500.xml``` and store it at an appropriate eXist-db path.
    
 4. Create a "New" file of type XQuery and upload the file present at ```/xquery/onlyquery.xq``` and store it at the same location as the dataset inside eXist-db.
 
