@@ -46,7 +46,7 @@ Steps:
    
 3. Create a "New" file of type XML and upload the dataset present at ```/dataset/islamqa_10thousand_500.xml``` and store it at an appropriate eXist-db path.
    
-4. Create a "New" file of type XQuery and upload the file present at ```/xquery/html_query_simple.xq``` and store it at the same location as the dataset inside eXist-db.
+4. Create a "New" file of type XQuery and upload the file present at ```/xquery/onlyquery.xq``` and store it at the same location as the dataset inside eXist-db.
    
 ## Querying the results
 Make sure the eXist-db server is still running for both these cases.
