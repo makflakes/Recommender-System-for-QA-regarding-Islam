@@ -14,9 +14,7 @@
       
 - [x] Implement XQuery code for Boolean Union Retrieval.
       
-- [x] Use GET Requests to gather XML data in python and compute cosine similarity.
-      
-- [x] OpenAI/GPT4All embeddings for semantic search.
+- [x] Use GET Requests to gather XML data in python and compute cosine similarity using Sklearn, OpenAI Ada-02 and GPT4All.
       
 - [x] Set of easy-hard questions to test search capability (Report).
 
