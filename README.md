@@ -52,10 +52,8 @@ Steps:
    
 4. Create a "New" file of type XQuery and upload the file present at ```/xquery/onlyquery.xq``` and store it at the same location as the dataset inside eXist-db.
    
-## Querying the results
-Make sure the eXist-db server is still running for both these cases.
-
-### Setting up the path in Flask-app:
+##  Setting up the path in Flask-app:
+Make sure the eXist-db server is still running.
 
 Steps: 
 
