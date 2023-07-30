@@ -83,25 +83,15 @@ python3 app.py
 
 #### 1. Token matching / Boolean Union Search :
 
-1. Enter your query in the search bar and click on the ```Search Token Matching``` Button.
-
-2. The results displayed will contain the exact words you searched for. If all the words do not exist in the Question, the Answer and the Title section of the data, then such results are not shown.
+The results displayed will contain the exact words you searched for. If all the words do not exist in the Question, the Answer and the Title section of the data, then such results are not shown.
 
 #### 2. Sklearn Search :
 
-1. Enter your query in the search bar and click on the ```Search Sklearn``` Button.
-
-2. This implementation makes use of sklearn's TFIDFVectorizer to create vector embeddings for the Title+Question+Answer elements of the XML data.
-
-3. The User query is similarly vectorized and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
+This implementation makes use of sklearn's TFIDFVectorizer to create vector embeddings for the Title+Question+Answer elements of the XML data. The User query is similarly vectorized and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
 
 #### 3. GPT4All Search :
 
-1. Enter your query in the search bar and click on the ```Search GPT4All``` Button.
-
-2. This implementation makes use of GPT4All's semantic vector representations which create semantic vectors for the Title+Question+Answer elements of the XML data.
-
-3. The User query is similarly made into semantic vector representation using the ```Embedder``` and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
+This implementation makes use of GPT4All's semantic vector representations which create semantic vectors for the Title+Question+Answer elements of the XML data. The User query is similarly made into semantic vector representation using the ```Embedder``` and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
 
 ## Extensions over the course content :
 
