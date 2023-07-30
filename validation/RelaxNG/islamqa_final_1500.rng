@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:data="urn:data">
+  <start>
+    <ref name="data"/>
+  </start>
+
+  <define name="data">
+    <element name="data">
+      <zeroOrMore>
+        <ref name="entry"/>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="entry">
+    <element name="entry">
+      <element name="url">
+        <text/>
+      </element>
+      <element name="title">
+        <text/>
+      </element>
+      <element name="question">
+        <text/>
+      </element>
+      <element name="answer">
+        <text/>
+      </element>
+      <element name="ada_embedding">
+        <text/>
+      </element>
+      <element name="gpt4all_embeddings">
+        <text/>
+      </element>
+    </element>
+  </define>
+</grammar>
