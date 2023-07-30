@@ -2,11 +2,7 @@
 
 ## **Project Members** :
 
-Mohammed Abdul Khaliq
-
-Ufkun-Bayram Menderes
-
-Murshed Alam Nahid
+Mohammed Abdul Khaliq, Ufkun-Bayram Menderes, Murshed Alam Nahid
 
 ## Status of Project
 
