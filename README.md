@@ -23,6 +23,19 @@
 ## **Motivation**:
 The project aims to develop an advanced search engine in the field of religion that utilizes personal experiences, seeking to provide more personalized, relevant, and intuitive search results, thereby enhancing user interaction and personalization of digital information.
 
+## Navigating the Repository :
+
+1. ```/data``` contains the main data files in XML and csv format. The csv file is the file created after web scraping while the XML file is the converted csv file with embeddings data and is required to be uploaded to eXist-db.
+
+2. ```/data_scraping_and_conversion``` contains all the code to extract data from website, create vector representation using OpenAI's Ada and GPT4All and to convert the csv to xml.
+
+3. ```/flask``` contains all the necessary files to run the flask app.
+
+4. ```/validation``` contains all the scripts and explanation for the validation process for our XML files.
+
+5. ```/xpath``` contains the scripts for querying our XML Database to gather statistics.
+
+6. ```/xquery``` contains the xquery file that needs to be uploaded onto the eXist-db database. 
 
 
 ## Setup the database
