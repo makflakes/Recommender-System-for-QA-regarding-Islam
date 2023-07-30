@@ -63,6 +63,12 @@ url = 'http://localhost:8080/exist/rest/<insert path here>'
 url = 'http://localhost:8080/exist/rest/db/Islamqa10/islamqa_embeddings.xml'
 ```
 
+3. Similarly, at line 161, you will have to point the path to your ```onlyquery.xq``` file on the exist-db database
+```
+website_data = extract_info('http://localhost:8080/exist/rest/<insert path here>?queries='+query.replace(" ", "+")) 
+website_data = extract_info('http://localhost:8080/exist/rest/db/Islamqa10/onlyquery.xq?queries='+query.replace(" ", "+")) 
+```
+
 ### 1. Basic Token Search
 
 Steps:
