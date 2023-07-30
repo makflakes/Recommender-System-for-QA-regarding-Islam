@@ -23,8 +23,8 @@ The project aims to develop an advanced search engine in the field of religion t
 
 ## Navigating the Repository :
 
-1. ```/data``` contains the main data files in XML and csv format. The csv file is the file created after web scraping while the XML file is the converted csv file with embeddings data and is required to be uploaded to eXist-db.
-
+1. ```/data``` contains the main data files in XML and csv format and must be downloaded from (Google Drive Link). The XML file present here is the main data that we will upload onto our database.
+ 
 2. ```/data_scraping_and_conversion``` contains all the code to extract data from website, create vector representation using OpenAI's Ada and GPT4All and to convert the csv to xml.
 
 3. ```/flask``` contains all the necessary files to run the flask app.
@@ -38,11 +38,12 @@ The project aims to develop an advanced search engine in the field of religion t
 ## Setup the database
 
 
+
 ### 1. eXist-DB database setup
 
 Steps:
 
-1. Download eXist-db by following the instructions at <a href='https://exist-db.org/exist/apps/doc/basic-installation'>eXist-db Installation Guide</a>
+1. Download eXist-db by following the instructions at https://exist-db.org/exist/apps/doc/basic-installationeXist-db
 
 2. Start the eXist-db server and 'Open Dashboard'. Select ```eXide - XQuery IDE```.
    
