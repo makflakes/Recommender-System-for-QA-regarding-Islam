@@ -27,10 +27,6 @@
 
 .
 
-.
-
-.
-
 
 
 ## Status of Project
