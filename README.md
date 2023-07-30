@@ -2,6 +2,9 @@
 
 ### **Project Members** - Mohammed Abdul Khaliq, Ufkun-Bayram Menderes, Murshed Alam Nahid
 
+### Preview of Web Interface
+![alt-text](https://github.com/makflakes/Islamqa_IR/blob/main/websitepreview.png)
+
 ## Status of Project
 
 - [x] Collect data from website.
