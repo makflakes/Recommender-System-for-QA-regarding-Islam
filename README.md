@@ -51,7 +51,19 @@ Steps:
 ## Querying the results
 Make sure the eXist-db server is still running for both these cases.
 
-### 1. Basic Boolean Search
+### Setting up the path in Flask-app:
+
+Steps: 
+
+1. Open the ```flask/app.py``` file in your desired editor.
+
+2. Change Line 67 to point to your database path in exist-db. For instance, we named our database in exist-db as Islamqa10/islamqa_embeddings.xml so line 67 becomes :
+```
+url = 'http://localhost:8080/exist/rest/<insert path here>'
+url = 'http://localhost:8080/exist/rest/db/Islamqa10/islamqa_embeddings.xml'
+```
+
+### 1. Basic Token Search
 
 Steps:
 
