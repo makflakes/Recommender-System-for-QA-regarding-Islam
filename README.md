@@ -79,7 +79,21 @@ pip3 install requirements.txt
 python3 app.py
 ```
 
-### 1. Basic Token Search
+### Types of Searches :
+
+#### 1. Token matching / Boolean Union Search :
+
+1. Enter your query in the search bar and click on the ```Search Token Matching``` Button.
+
+2. The results displayed will contain the exact words you searched for. If all the words do not exist in the Question, the Answer and the Title section of the data, then such results are not shown.
+
+#### 2. Sklearn Search :
+
+1. Enter your query in the search bar and click on the ```Search Sklearn``` Button.
+
+1. This implementation makes use of sklearn's TFIDFVectorizer to create vector embeddings for the Title+Question+Answer elements of the XML data.
+
+2. The User query is similarly vectorized and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
 
 
 
