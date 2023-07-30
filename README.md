@@ -103,6 +103,12 @@ python3 app.py
 
 3. The User query is similarly made into semantic vector representation using the ```Embedder``` and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
 
+### Features that didn't make it to the final website :
+
+1. Statistics computed using XPath for theologian and book references were collected by us. However, we still need to work on how and where to best display such stats on the wesbite.
+
+2. OpenAI's semantic search using their 'Ada-02' model has been implemented and is present in the XML data. However, to query such embeddings would require making use of OpenAI API Keys which would require extra security measures to ensure that they dont get leaked when the website is hosted. Additionally, such an implementation on the hosted website would cost us money. Thus, we opt for a similarly sophisticated OpenSource Semantic Search using GPT4All.
+
 
 
 
