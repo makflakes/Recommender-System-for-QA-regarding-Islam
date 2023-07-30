@@ -4,26 +4,43 @@
 
 ## Preview of Web Interface
 .
-.
-.
-.
-.
-.
-.
+
 .
 
-..
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
 .
 
 ## Status of Project
