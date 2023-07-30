@@ -1,6 +1,6 @@
 # **IslamQA : Directing you to the correct Answer**
 
-### **Project Members** :Mohammed Abdul Khaliq, Ufkun-Bayram Menderes, Murshed Alam Nahid
+### **Project Members** - Mohammed Abdul Khaliq, Ufkun-Bayram Menderes, Murshed Alam Nahid
 
 ## Status of Project
 
