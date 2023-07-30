@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IslamQA : Directing you to the correct answer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">IslamQA Answer Finder</span>
+        <form class="form-inline" action="/" method="POST">
+            <input class="form-control mr-sm-2" type="search" id="query" name="query" placeholder="Enter your query" required>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "searchtype" id="searchtype" value="gpt4all">Search GPT4All</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "searchtype" id="searchtype" value="sklearn">Search Sklearn</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "searchtype" id="searchtype" value="tokenmatching">Search Token Matching</button>
+        </form>
+    </nav>
+    <div class="container py-5">
+        <h2>Top 5 most similar results :</h2>
+
+        {% for entry in entries %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ entry.title }}</h5>
+                <p class="card-text"><strong>URL:</strong> <a href="{{ entry.url }}" target="_blank">{{ entry.url }}</a></p>
+                <p class="card-text"><strong>Question:</strong> {{ entry.question }}</p>
+                <p class="card-text"><strong>Answer:</strong> {{ entry.answer }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
