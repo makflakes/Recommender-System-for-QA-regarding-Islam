@@ -57,7 +57,7 @@ Steps:
 
 1. Open the ```flask/app.py``` file in your desired editor.
 
-2. Change Line 67 to point to your database path in exist-db. For instance, we named our database in exist-db as Islamqa10/islamqa_embeddings.xml so line 67 becomes :
+2. Change Line 67 to point to your database path in exist-db. For instance, we placed our XML file in ```Islamqa10``` folder and renamed it to ```islamqa_embeddings.xml``` :
 ```
 url = 'http://localhost:8080/exist/rest/<insert path here>'
 url = 'http://localhost:8080/exist/rest/db/Islamqa10/islamqa_embeddings.xml'
