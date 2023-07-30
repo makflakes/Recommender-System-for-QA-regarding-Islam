@@ -57,16 +57,16 @@ Steps:
 
 1. Open the ```flask/app.py``` file in your desired editor.
 
-2. Change Line 67 to point to your database path in exist-db. For instance, we placed our XML file in ```Islamqa10``` folder and renamed it to ```islamqa_embeddings.xml``` :
+2. Change Line 15 to point to your database path in exist-db. For instance, we placed our XML file in ```Islamqa10``` folder and renamed it to ```islamqa_embeddings.xml``` :
 ```
 url = 'http://localhost:8080/exist/rest/<insert path here>'
 url = 'http://localhost:8080/exist/rest/db/Islamqa10/islamqa_embeddings.xml'
 ```
 
-3. Similarly, at line 161, you will have to point the path to your ```onlyquery.xq``` file on the exist-db database
+3. Similarly, at line 16, you will have to point the path to your ```onlyquery.xq``` file on the exist-db database
 ```
-website_data = extract_info('http://localhost:8080/exist/rest/<insert path here>?queries='+query.replace(" ", "+")) 
-website_data = extract_info('http://localhost:8080/exist/rest/db/Islamqa10/onlyquery.xq?queries='+query.replace(" ", "+")) 
+xquerypath = 'http://localhost:8080/exist/rest/<insert path to onlyquery.xq>?queries='
+xquerypath = 'http://localhost:8080/exist/rest/db/Islamqa10/onlyquery.xq?queries='
 ```
 
 4. Install the required libraries :
