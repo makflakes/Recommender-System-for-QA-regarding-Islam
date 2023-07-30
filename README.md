@@ -95,7 +95,16 @@ python3 app.py
 
 3. The User query is similarly made into semantic vector representation using the ```Embedder``` and the output results are the top 5 ranked results based on cosine similarity between the Query and the XML data.
 
-### Features that didn't make it to the final website :
+## Extensions over the course content :
+
+1. Making use of a different Database (eXist-db) which was not covered in the lectures and was also not implemented by other teams.
+
+2. Using XQuery for our token matching search feature.
+
+3. Making use of GPT4All/OpenAI's Ada-02 to create and store vector entries in XML format to later query from them.
+
+
+## Features that didn't make it to the final website :
 
 1. Statistics computed using XPath for theologian and book references were collected by us. However, we still need to work on how and where to best display such stats on the wesbite.
 
