@@ -12,6 +12,12 @@ import pandas as pd
 from gpt4all import GPT4All, Embed4All
 from openai.embeddings_utils import cosine_similarity
 
+url = 'http://localhost:8080/exist/rest/db/Islamqa10/islamqa_embeddings.xml'
+xquerypath = 'http://localhost:8080/exist/rest/db/Islamqa10/onlyquery.xq?queries='
+
+
+'''Defining Functions Start'''
+
 #Converts list to dictionary format to be passed as data to the website renderer
 def lists_to_dicts(lists):
     dicts = []
@@ -50,23 +56,57 @@ def extract_info(url):
     return data
 
 #Used to compute vector siminlarity in GPT4All search
-def compute_query_qa_similarity(query, embedder, df):
+def compute_query_qa_similarity(query, embedder, df, n=5):
+
+  '''
+  computes the similarity between an input query and the embedded qa-pairs
+  and suggests QA-pairs based on similarity.
+  The function returns a list of 5 QA-Pairs based on maximum similarity
+  with the input query.
+
+
+  Parameters
+  -----------
+  query: str
+    Input query for which 5 QA-pairs will be returned.
+
+  embedder: GPT4All Embedder Class
+    Used to create Query embeddings.
+
+  df: XML Data put into a Dataframe Object
+    Dataframe created to store the XML data for easy processing, manipulation and navigation using python.
+
+  n: int
+    Determines how many suggested QA-Pairs will be returned.
+    The default is 5.
+
+
+  Returns
+  -------
+  similarities_ordered: list
+    A list of suggested QA-Pairs with up to n suggestions. Ordered according
+    to their similarity with the input query.
+
+
+  '''
+  if n > 10:
+    return ValueError('Invalid number for n, can only be between 1-10')
   embedded_query = embedder.embed(query)
   embedded_qa_pair_embeddings = list(df['gpt4all_embedding'])
-  embedded_qa_pair_text = list(df['title'] + '%%' + df['url'] + '%%' + df['question'] +'%%' + df['answer'])
+  embedded_qa_pair_text = list(list(df['title'] + '%%' + df['url'] + '%%' + df['question'] +'%%' + df['answer']))
   zipped_qa_pairs = list(zip(embedded_qa_pair_embeddings, embedded_qa_pair_text))
   similarities = [(cosine_similarity(embedded_query, qa_pair_tuple[0]), qa_pair_tuple[1]) for qa_pair_tuple in zipped_qa_pairs] #qa_pair_tuple[0] = embedding
   # re-order list
   similarities_ordered = sorted(similarities, key=lambda tup: tup[0], reverse=True) # tup[0] is the value of cosine similarity
-  return similarities_ordered[:5]
+  return similarities_ordered[:n]
 
+
+'''Defining Functions End'''
 
 '''Preliminary processing to read the XML from database and 
 convert it into Required Data Types for easy processing.'''
 
-url = 'http://localhost:8080/exist/rest/db/Islamqa10/islamqa_embeddings.xml'
-
-            # send GET request
+# send GET request
 response = requests.get(url)
 response.raise_for_status()
 
@@ -110,6 +150,8 @@ text_data = [(i, ' '.join(entry.xpath('.//title/text() | .//question/text() | ./
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform([text[1] for text in text_data])
 
+
+#Flask App Starts
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -119,8 +161,7 @@ def index():
         searchtype=request.form['searchtype']
 
 
-'''We have three search types : sklearn, tokenmatching and GPT4All, which require different ways to process data'''
-
+        '''We have three search types : sklearn, tokenmatching and GPT4All, which require different ways to process data'''
         if searchtype=='sklearn':
         
 
@@ -158,7 +199,7 @@ def index():
 
             print(query.replace(" ", "+"))
             
-            website_data = extract_info('http://localhost:8080/exist/rest/db/Islamqa10/onlyquery.xq?queries='+query.replace(" ", "+")) 
+            website_data = extract_info(xquerypath+query.replace(" ", "+")) 
             
             return render_template('results.html', entries=website_data)
 
