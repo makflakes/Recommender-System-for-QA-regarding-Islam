@@ -37,7 +37,6 @@ The project aims to develop an advanced search engine in the field of religion t
 
 6. ```/xquery``` contains the xquery file that needs to be uploaded onto the eXist-db database. 
 
-
 ## Setup the database
 
 
