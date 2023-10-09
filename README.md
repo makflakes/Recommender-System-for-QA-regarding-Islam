@@ -3,35 +3,7 @@
 ### **Project Members** - Mohammed Abdul Khaliq, Ufkun-Bayram Menderes, Murshed Alam Nahid
 
 ## Preview of Web Interface
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
+[insert]
 
 
 ## Status of Project
