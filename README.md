@@ -1,4 +1,4 @@
-# **IslamQA : Directing you to the correct Answer**
+# **IslamQA: Directing you to the correct Answer**
 
 ### **Project Members** 
 
